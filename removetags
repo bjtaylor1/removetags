@@ -1,0 +1,5 @@
+#!/bin/bash
+
+java -jar /usr/bin/removetags-1.0-SNAPSHOT.jar $1 $2 && \
+sed -i '/^\s*$/d' $2
+
